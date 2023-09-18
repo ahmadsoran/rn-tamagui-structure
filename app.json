@@ -1,0 +1,83 @@
+{
+  "expo": {
+    "name": "app",
+    "slug": "app",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./CORE/assets/images/icon.png",
+    "scheme": "app",
+    "userInterfaceStyle": "automatic",
+    "jsEngine": "hermes",
+
+    "splash": {
+      "image": "./CORE/assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F7FAFC"
+    },
+    "updates": {
+      "enabled": false
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.app.app",
+      "icon": "./CORE/assets/images/icon.png",
+      "splash": {
+        "image": "./CORE/assets/images/splash.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#F7FAFC",
+        "dark": {
+          "image": "./CORE/assets/images/splash.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#171923"
+        }
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./CORE/assets/images/adaptive-icon.png",
+        "backgroundColor": "#F7FAFC"
+      },
+      "package": "com.app.app",
+      "icon": "./CORE/assets/images/icon.png",
+      "splash": {
+        "image": "./CORE/assets/images/splash.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#F7FAFC",
+        "dark": {
+          "image": "./CORE/assets/images/splash.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#171923"
+        }
+      }
+    },
+
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "plugins": [
+      "expo-build-properties",
+      [
+        "onesignal-expo-plugin",
+        {
+          "mode": "production",
+          "devTeam": "XXXXXX"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow app app to use your location.",
+          "locationWhenInUsePermission": "Allow Dealer app to use your location."
+        }
+      ]
+    ],
+    "extra": {
+      "oneSignalAppId": "XXXXX"
+    },
+    "experiments": {
+      "turboModules": true,
+      "typedRoutes": true
+    }
+  }
+}
